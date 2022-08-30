@@ -52,36 +52,3 @@ AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY e.emp_no;
 
 
-SELECT DISTINCT ON (rt.emp_no)
-rt.emp_no,
-rt.first_name,
-rt.last_name,
-rt.title,
-de.dept_no,
-d.dept_name
-INTO unique_titles_by_dept
-FROM retirement_titles as rt	
-INNER JOIN dept_emp as de
-	ON (rt.emp_no = de.emp_no)
-INNER JOIN departments as d 
-	ON (de.dept_no = d.dept_no)
-ORDER BY rt.emp_no;
-
-
-SELECT utbd.title, 
-    utbd.dept_name,
-    COUNT(utbd.title)
-INTO roles_tbfilled
-FROM unique_titles_by_dept AS utbd
-GROUP BY utbd.dept_name, utbd.title
-ORDER BY utbd.dept_name;
-
-
-SELECT utbd.title,
-    utbd.dept_name,
-    COUNT(utbd.title)
-INTO mentor_qualified_staff
-FROM unique_titles_by_dept AS utbd
-WHERE utbd.title IN (utbd.dept_name, utbd.title)
-GROUP BY utbd.title IN ("Senior Engineer", "Senior Staff", "Technique Leader", "Manager")
-ORDER BY utbd.dept_name;
