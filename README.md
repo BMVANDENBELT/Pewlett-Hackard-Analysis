@@ -20,7 +20,9 @@ The picture above diaplsays the relationship between each table and how they int
 - The fourth table is the "Mentorship Eligible" employees. They are eligible to participate in the mentorship program for training new hires for the company.
 
 <img width="722" alt="mentorship_eligibility" src="https://user-images.githubusercontent.com/107223178/188023181-4b093f50-b428-4d9c-9db3-d23bf544677f.png">
+
 --------------------
 # SUMMARY
+
 - When you look at the data, it is shown that their are 1549 retiring-employees that are eligible for the mentorship program. Because we joined both the departments table and the retirement table, we were able to see just how many people will be leaving the company as well as giving us an idea of how many roles will need to be filled.
 - - There are many ways we can filter the data set to show just what we are looking for but an important query that would benefit the overall scope of the mentorship problem would be a table that holds all the encompassing data while being able to filter for mentorship eligibility, retiring, rolls needed to be filled.
