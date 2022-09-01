@@ -27,4 +27,4 @@
 # SUMMARY
 
 - When you look at the data, it is shown that their are 1549 retiring-employees that are eligible for the mentorship program. Because we joined both the departments table and the retirement table, we were able to see just how many people will be leaving the company as well as giving us an idea of how many roles will need to be filled.
-- - There are many ways we can filter the data set to show just what we are looking for but an important query that would benefit the overall scope of the mentorship problem would be a table that holds all the encompassing data while being able to filter for mentorship eligibility, retiring, rolls needed to be filled.
+- There are many ways we can filter the data set to show just what we are looking for but an important query that would benefit the overall scope of the mentorship problem would be a table that holds all the encompassing data while being able to filter for mentorship eligibility, retiring, rolls needed to be filled.
